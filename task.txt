@@ -1,0 +1,39 @@
+task_1.1:
+Request:
+SELECT name FROM hosts WHERE id = 192210
+Answer:
+Susan
+
+task_1.2:
+Request:
+SELECT id FROM hosts WHERE name = 'john'
+Answer:
+81940252
+
+task_1.3:
+Request:
+SELECT COUNT(*) 
+FROM hosts 
+WHERE name = 'Paul' 
+  AND location IS NULL
+Answer:
+2
+
+task_2.1:
+Request:
+SELECT id, name 
+FROM hosts 
+WHERE host_since >= '2019-05-01' 
+  AND host_since <= '2019-05-31'
+Answer:
+read file answer_for_task_2.1.xlsx
+
+task_2.2:
+Request:
+SELECT id, name 
+FROM hosts 
+WHERE host_since >= '2019-05-01' 
+  AND host_since <  '2019-06-01'
+LIMIT 10
+Answer:
+read file answer_for_task_2.2.xlsx
